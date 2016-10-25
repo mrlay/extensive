@@ -1,0 +1,11 @@
+For get along with my new work,i decided to recored somethings at this responsity,so that i could get know well with job.
+
+1 随着进一步对项目代码的了解，对于bootloader工作的内容以及它的代码的具体的实现，我语法感到好奇，目前认为通读 实践一遍会显得很有必要。
+2 关于Nand flash的一些物理特性我需要在wikipad上好好查阅一番。
+3 关于arm/single chip在上电后他们默认的要做的事情 是怎样实现的？ such as (PLL, Timer,Watch dog,periphreal equipments), 还有关于模块的控制寄存器的
+  操作是通过 再起对应的地址上的内容进行修改实现的，那么问题来了，关于这些设备的CRs'address 和 我们通常所说的地址空间中的地址 他们是一致的吗？ 如果是一指的
+  那么他们是怎样完成这种I/O的映射？ 这种映射的定义在尽可能允许的情况下 地址是否可以使任意的？ 这种映射关系的抽象在电路结构中是一种怎样的体现？
+4 汇编代码有一个特性我觉得很不错-----他的伪指令能够直接的表达出code/data/dss/stack/heap/kernel_info_struct segments 在地址空间上的分布。我相信在一个
+  没有操作系统的片子上能够正常的运行用while(1)构造的软件系统，在此之前一定有其他的什么机制完成 能够使 其对应的二进制代码序列正常运行的环境（heap stack 
+  register and pointers）因而我觉得在上电后执行的 “机制” 显得很重要，他到底会做些什么，以及如何用代码去表达的？
+5 一个项目是由许多个模块构成的，那么 这些模块们 是如何在实际项目中组织的？  
